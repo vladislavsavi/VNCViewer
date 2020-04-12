@@ -1,0 +1,10 @@
+{
+  "parser" : "babel-eslint" ,
+  "extends": ["standard", "standard-react"],
+  "rules": {
+    "semi": "off",
+    "react/jsx-handler-names": "off",
+    "no-debugger": "off",
+    "react/prop-types": "off"
+  }
+}

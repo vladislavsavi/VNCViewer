@@ -1,0 +1,11 @@
+import React from 'react';
+import { Paper } from '@material-ui/core';
+
+export const About = () => {
+  return (
+    <Paper className='text_wrapper'>
+      <h1> About </h1>
+      <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsam non repellat, repellendus saepe vero! At atque autem commodi cupiditate ducimus facilis impedit, in ipsam itaque pariatur porro tenetur vel.</span><span>Amet asperiores cum, ducimus eaque, eum illo iusto magni minus modi nisi possimus quasi quia recusandae sint velit. Dolores maiores modi quas ut! Aliquam aliquid, excepturi inventore nobis placeat quos?</span><span>Accusantium animi, aspernatur atque consectetur dignissimos et eveniet ex fuga iure minus optio pariatur porro provident temporibus tenetur ullam velit? Doloremque illo ipsum natus necessitatibus nostrum quam quibusdam saepe veniam!</span><span>Accusamus assumenda consequatur debitis doloremque ducimus et eum, excepturi exercitationem expedita explicabo laborum minima molestiae non numquam officia placeat porro praesentium quasi qui quibusdam quidem quis rerum temporibus unde vitae.</span><span>Architecto at blanditiis distinctio eum hic in labore magni necessitatibus nemo nesciunt, praesentium sequi velit? Amet atque consectetur dolores, enim fugiat illum nemo odio quasi quod sint sit totam ullam?</span><span>A ad asperiores aut beatae deserunt eos fuga ipsa, ipsum iste magnam, modi molestiae molestias nostrum odio odit omnis quia quisquam reiciendis repudiandae sunt suscipit tempora ut. Incidunt, nam, vitae!</span><span>Beatae deserunt dicta dolor eos et, fugiat inventore ipsam iusto labore molestiae nulla odio omnis pariatur perferendis qui quis recusandae, rem reprehenderit sapiente sequi vel veritatis voluptas? Minus, repellat veniam?</span><span>Ad aliquam debitis ducimus eaque et eveniet expedita fugiat, illo illum iusto numquam odio odit praesentium quaerat rem sit vel voluptates voluptatibus. Aliquid ipsam itaque laudantium placeat quibusdam quod tempore.</span><span>Amet, consequatur corporis culpa error eum excepturi iusto laboriosam libero natus obcaecati odit officia perspiciatis quibusdam quos temporibus. Animi cum dolore eligendi, est libero nihil recusandae rerum temporibus. Ad, quibusdam!</span></p>
+    </Paper>
+  );
+};

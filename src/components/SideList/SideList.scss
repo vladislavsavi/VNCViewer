@@ -1,0 +1,19 @@
+.side_list-top_nav_bar{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(65, 72, 99, 0.2);
+  background-color: rgba(36, 41, 46, 0.68);
+  margin-bottom: 25px;
+  .MuiIconButton-root{
+    height: 25px;
+    padding: 0 5px;
+    border-radius: 0;
+  }
+  .MuiIcon-fontSizeSmall{
+    font-size: 1rem;
+  }
+}
+
+.side_list-left_Menu{
+  width: 250px;
+}

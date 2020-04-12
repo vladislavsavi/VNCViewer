@@ -1,0 +1,44 @@
+productName: "butterfly effect"
+appId: "com.example.butterflyEffect"
+
+
+# Windows configuration
+win:
+  icon: "src/app/assets/images/icon.ico"
+  target:
+    - "zip"
+    - "nsis"
+
+# Config for the windows installer
+nsis:
+  oneClick: true
+  perMachine: true
+
+# Linux configuration
+linux:
+  icon: "src/assets/img/icon.png"
+  category: Production
+  target:
+    - "AppImage"
+    - "deb"
+    - "rpm"
+
+deb:
+  depends:
+    # --- Default START
+    - gconf2
+    - gconf-service
+    - libnotify4
+    - libappindicator1
+    - libxtst6
+    - libnss3
+    # --- Default END
+    - libsecret-1-0 # This is needed for keytar on linux
+
+directories:
+  buildResources: "resources"
+  output: "release"
+
+publish:
+  provider: "generic"
+  url: "https://butterflyEffect.blob.core.windows.net/releases"
