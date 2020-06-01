@@ -1,1 +1,0 @@
-export { DataBase } from './DataBase';

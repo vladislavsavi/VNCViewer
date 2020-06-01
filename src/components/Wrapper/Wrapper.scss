@@ -9,8 +9,17 @@
   color: #61dafb;
 }
 
-body {
-  font-family: "Roboto";
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll{
+  flex: 1 1;
+  overflow-y: auto;
 }
 
 

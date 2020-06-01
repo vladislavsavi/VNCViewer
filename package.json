@@ -1,6 +1,6 @@
 {
-  "name": "butterfly_effect",
-  "productName": "butterfly effect",
+  "name": "vnc_viewer",
+  "productName": "vnc_viewer",
   "version": "0.1.0",
   "author": "Vladislav Savin <Vladislavsavi@gmail.com>",
   "private": true,
@@ -8,7 +8,7 @@
   "homepage": "./",
   "postinstall": "electron-builder install-app-deps",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js --port 3000",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js --port 8080",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "dist": "electron-builder",
     "electron": "electron ."
@@ -16,22 +16,16 @@
   "dependencies": {
     "@material-ui/core": "^4.9.1",
     "@material-ui/icons": "^4.9.1",
-    "draft-js": "^0.11.5",
+    "@novnc/novnc": "^1.1.0",
     "font-awesome": "^4.7.0",
     "frameless-titlebar": "^1.0.8",
     "history": "^4.10.1",
     "lodash": "^4.17.15",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-digraph": "^6.6.4",
     "react-dom": "^16.12.0",
-    "react-draft-wysiwyg": "^1.14.4",
-    "react-redux": "^7.2.0",
     "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2",
-    "redux": "^4.0.5",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",

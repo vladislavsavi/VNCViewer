@@ -9,7 +9,7 @@ let mainWindow;
 
 const urlForStart = () => {
   if (process.env.NODE_ENV === 'development') {
-    return 'http://localhost:3000';
+    return 'http://localhost:8080';
   }
   return url.format({
     pathname: path.join(__dirname, '/../build/index.html'),

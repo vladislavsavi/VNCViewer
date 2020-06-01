@@ -86,5 +86,12 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html')
     }),
     new MiniCssExtractPlugin({ filename: '[name]-[contenthash:8].css' })
-  ]
+  ],
+  devServer: {
+    proxy: {
+      '/socket.io': {
+        target: 'http://localhost:8090/'
+      }
+    }
+  }
 };
