@@ -1,6 +1,6 @@
-# electron-react-redux-indexedDB-mui-starter
+# electron-VNCViewer
 
-Для быстрого старта разработки desktop приложения на electron + react
+VNC-client
 
 # Начало работы
 ### Установка зависимостей
