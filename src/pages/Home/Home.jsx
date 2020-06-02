@@ -28,12 +28,13 @@ export class Home extends React.Component {
       return;
     }
     const canvas = document.getElementById('target');
-    const r = new VNC(
+    const session = new VNC(
       canvas,
       `ws://${host}:${port}/websockify`,
       {
         dragViewport: true,
         resizeSession: true,
+        scaleViewport: true,
         credentials: {
           password
         }
@@ -41,8 +42,8 @@ export class Home extends React.Component {
       this.setState,
       this
     );
-    console.log(r)
-    r._display.resize(100, 100);
+    console.log(session);
+    this.setState({ session }, () => console.log(this.state));
   };
 
   validate = () => {
@@ -121,6 +122,13 @@ export class Home extends React.Component {
       }}
       >
         {this.renderLoginForm()}
+        {
+          isConnect && (
+            <div className='action_wrapper'>
+              <mui.Button key='btn_scale' size='small' onClick={() => { this.state.session.scaleViewport = !this.state.session.scaleViewport }}>Scaling</mui.Button>
+            </div>
+          )
+        }
         <div id='target' style={{ width: '100%' }} />
       </div>
     );

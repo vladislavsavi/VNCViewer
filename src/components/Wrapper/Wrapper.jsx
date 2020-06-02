@@ -3,7 +3,6 @@ import { HashRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { remote } from 'electron';
 import TitleBar from 'frameless-titlebar';
-import { Typography } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { theme } from '@asts/theme';
@@ -53,9 +52,7 @@ export class Wrapper extends React.Component {
           <HashRouter>
             <ThemeProvider theme={theme}>
               <CssBaseline />
-              <Typography color='secondary' style={{ height: '100%' }}>
-                {this.props.children}
-              </Typography>
+              {this.props.children}
             </ThemeProvider>
           </HashRouter>
         </div>
